@@ -12,7 +12,7 @@ int main() {
     cin >> s;
 
     if(s.size() > k){
-        s.substr(0, k) + "...";
+        s = s.substr(0, k) + "...";
 
     }
     cout << s;
