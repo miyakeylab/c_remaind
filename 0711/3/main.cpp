@@ -53,7 +53,7 @@ int main() {
       }
     }
 
-    cout << count;
+    cout << count << std::endl;
   }
 
   
