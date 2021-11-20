@@ -1,23 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-char a[200000],b[200000];
 
 int main() {
-    long long count = 0;
-    cin >> a;
-    cin >> b;
-    
-    long long i = 0;
-    while (a[i] != '\0')
+    long long x;
+    int count;
+    int num;
+    cin >> count;
+　　std::vector<long long> v;
+
+    for(int i = 0; i < count; i++ )
     {
-        if(a[i] != b[i])
-        {
-            count++;
+        cin >> num;
+
+        if(num  == 1){
+            cin >> x;
+            v.push_back(x);
+
+        }else if(num  == 2){
+            cout << v[0] << endl;
+            v.erase(v.begin());
+        }else{
+            sort(v.begin(), v.end());
         }
-        i++;
+
     }
-    cout << count;
+
+
 
     return 0;
 }
