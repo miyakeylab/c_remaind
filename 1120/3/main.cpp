@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 vector<int>  p;
 int s[100001];
 signed main()

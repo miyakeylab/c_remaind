@@ -9,12 +9,8 @@ signed main(){
     cin>>t;
 
   if(s[0] == '#' && s[1] == '#' ){
-    if(t[0] == '.' && t[1] == '.' ){
-      cout<< "No";
-    }else{
       cout<< "Yes";
 
-    }
   }else if(s[0] == '.' && s[1] == '.' ){
     if(t[0] == '#' && t[1] == '#' ){
     cout<< "Yes";
