@@ -61,6 +61,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "system_error": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iomanip": "cpp"
     }
 }
