@@ -8,15 +8,18 @@ using pll = pair<long, long>;
 #define pb push_back
 #define ll long long
 
-signed main(){
+signed main()
+{
   ll n;
 
-  cin>>n;
-  if(n >= -2147483648 && n < 2147483648){
-  cout << "Yes";
-  }else{
+  cin >> n;
+  if (n >= -2147483648 && n < 2147483648)
+  {
+    cout << "Yes";
+  }
+  else
+  {
     cout << "No";
   }
   return 0;
-
 }

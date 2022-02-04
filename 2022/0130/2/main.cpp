@@ -8,30 +8,30 @@ using pll = pair<long, long>;
 #define pb push_back
 #define ll long long
 
-signed main(){
-  int h,w;
+signed main()
+{
+	int h, w;
 
-  cin>>h; 
-  cin>>w; 
+	cin >> h;
+	cin >> w;
 
-  int a[h+1][w+1];
- 	for (int i = 0; i < h; i++)
+	int a[h + 1][w + 1];
+	for (int i = 0; i < h; i++)
 	{
 		for (int n = 0; n < w; n++)
 		{
 			cin >> a[i][n];
 		}
-	} 
+	}
 
 	for (int n = 0; n < w; n++)
-	{ 	
+	{
 		for (int i = 0; i < h; i++)
 		{
 			cout << a[i][n] << " ";
 		}
 		cout << endl;
 	}
-	
-  return 0;
 
+	return 0;
 }
