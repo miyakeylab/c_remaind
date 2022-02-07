@@ -12,17 +12,19 @@ signed main()
     int n;
     int k;
     int now;
-    vector <int> vec;
+    vector<int> vec;
     cin >> n;
     cin >> k;
     int pre = 0;
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
 
         cin >> now;
         vec.push_back(now);
-        if(i >= n-1){
-            std::sort(vec.begin(),vec.end(),std::greater<int>());
-             cout << vec[n-1];        
+        if (i >= n - 1)
+        {
+            std::sort(vec.begin(), vec.end(), std::greater<int>());
+            cout << vec[n - 1];
         }
     }
     return 0;

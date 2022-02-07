@@ -12,44 +12,48 @@ using pll = pair<long, long>;
 #include <iomanip>
 #include <cmath>
 
-using std::cout; using std::endl;
-using std::vector; using std::copy;
+using std::copy;
+using std::cout;
+using std::endl;
+using std::vector;
 
-
- double calculateDistance(std::pair< double,  double> &x, std::pair< double,  double> &y)
+double calculateDistance(std::pair<double, double> &x, std::pair<double, double> &y)
 {
-    return ( double)sqrt(( double)pow(x.first - y.first, 2) +
-                ( double)pow(x.second - y.second, 2));
+  return (double)sqrt((double)pow(x.first - y.first, 2) +
+                      (double)pow(x.second - y.second, 2));
 }
 
-signed main() {
-  
+signed main()
+{
+
   int n;
-  vector<std::pair< double,  double>> vec;
-   double x;
-   double y;
-  cin>>n; 
-   double rtn = 0;
- // n = 1;
-  
-  for(int i = 0; i < n; i++ ){
+  vector<std::pair<double, double> > vec;
+  double x;
+  double y;
+  cin >> n;
+  double rtn = 0;
+  // n = 1;
+
+  for (int i = 0; i < n; i++)
+  {
     cin >> x;
     cin >> y;
     vec.push_back({x, y});
-    
   }
-  for(int i=0; i<n; i++){
+  for (int i = 0; i < n; i++)
+  {
 
-    for(int p=i + 1 ; p < n; p++){
-       double data =  calculateDistance(vec[i], vec[p]);
+    for (int p = i + 1; p < n; p++)
+    {
+      double data = calculateDistance(vec[i], vec[p]);
 
-      if(rtn < data){
+      if (rtn < data)
+      {
         rtn = data;
       }
     }
-    
-    }
+  }
 
-      cout << rtn;
-    return 0;
+  cout << rtn;
+  return 0;
 }
