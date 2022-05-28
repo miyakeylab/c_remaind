@@ -10,17 +10,20 @@ using pll = pair<long, long>;
 
 signed main()
 {
-	ll a,b,k;
-	cin >> a >> b>> k;
+  string s;
+  cin >> s;
 
-	ll count = 0;
-
-	while(a < b){
-		a = a * k;
-		count++;
-	}
-
-	cout << count;
-
-	return 0;
+  if (s.length() == 1)
+  {
+    cout << s + s + s + s + s + s << endl;
+  }
+  else if (s.length() == 2){
+    cout << s + s + s << endl;
+  
+  }
+  else
+  {
+    cout << s + s << endl;
+  }
+  return 0;
 }
